@@ -20,7 +20,7 @@ GPGENIUS was designed with user ease and navigation in mind. Enter the amount of
 RESOURCES:
 Fonts: 
 GPGenius Font: 
-Text: Riffic One, courtesy _____
+Text: Poppins (courtesy: Google Fonts)
 
 UPDATES:
 Most recent update/patch: (date)
