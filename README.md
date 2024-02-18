@@ -23,4 +23,7 @@ GPGenius Font:
 Text: Poppins (courtesy: Google Fonts)
 
 UPDATES:
-Most recent update/patch: (date)
+Most recent update/patch: 
+2/17: 
+Update 1: Added A Interactive Q&A feature where user's questions will be immediately emailed to our email  
+Update 2: Added 2 More Pages
