@@ -1,0 +1,26 @@
+body {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(165, 206, 255, 1) 100%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-blue-500 {
+    color: #eeaeca;
+}
+
+.button-style {
+    background-color: #eeaeca;
+    /* Other button styles */
+}
+
+.button-style:hover {
+    background-color: #94bbe9;
+}
+
+#dropdownMenu {
+    z-index: 10; 
+}
+
+.question-button:hover {
+    background-color: #94bbe9; /
+}
