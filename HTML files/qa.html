@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A Section</title>
+    <style>
+        body {
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(165,206,255,1) 100%);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #FAF9F6;
+            position: relative; /* Added position relative */
+            text-align: center; /* Center align content */
+        }
+        .backButton {
+            position: absolute;
+            top: 20px;
+            left: 20px; /* Changed right to left */
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #eeaeca;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .backButton:hover {
+            background-color: rgba(238, 174, 202, 0.9);
+        }
+        .arrow-path {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Questions?</h1>
+        <form target="_blank" action="https://formsubmit.co/gpgeniusfbla@gmail.com" method="POST">
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                    </div>
+                    <div class="col">
+                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+        </form>
+    </div>
+    <!-- Back button -->
+    <button class="backButton" onclick="goBack()">
+        <!-- Reversed arrow SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arrow-path">
+            <path fill="none" d="M0 0h24v24H0V0z"/>
+            <path d="M6.29 8.71a.996.996 0 0 0 0 1.41L10.59 14H3c-.55 0-1 .45-1 1s.45 1 1 1h7.59l-4.3 4.29a.996.996 0 1 0 1.41 1.41l5.3-5.3c.39-.39.39-1.02 0-1.41l-5.3-5.3a.996.996 0 0 0-1.41 0z"/>
+        </svg>
+    </button>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

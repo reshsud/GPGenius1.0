@@ -1,0 +1,60 @@
+<img src="Slide16_9-1.png" alt="Instructions"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Example</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background-image: url('Slide 16_9 - 1.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        #backButton {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #eeaeca; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #backButton:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        #backButton svg {
+            fill: #000;
+        }
+    </style>
+</head>
+<body>
+    <!-- Round arrow button to go back to index.html -->
+    <div id="backButton" onclick="goBack()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#000" width="24" height="24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+    </div>
+
+    <!-- JavaScript function to go back to index.html -->
+    <script>
+        function goBack() {
+            window.location.href = "index.html"; 
+        }
+    </script>
+</body>
+</html>
